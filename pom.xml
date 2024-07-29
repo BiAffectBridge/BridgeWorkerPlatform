@@ -133,7 +133,7 @@
         <dependency>
             <groupId>org.sagebionetworks</groupId>
             <artifactId>synapseJavaClient</artifactId>
-            <version>386.0</version>
+            <version>507.0</version>
         </dependency>
         <dependency>
             <groupId>org.sagebionetworks.bridge</groupId>
@@ -189,6 +189,12 @@
             <artifactId>BridgeTestUtils</artifactId>
             <version>1.5</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.sagebionetworks</groupId>
+                    <artifactId>synapseJavaClient</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>

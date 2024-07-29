@@ -647,7 +647,7 @@ public class UploadCsvWorkerProcessorTest {
     }
 
     @Test
-    public void writeCsvRow_nullValues() {
+    public void writeCsvRow_nullValues() throws IOException {
         // Participant version, metadata, and data can be null. This test makes sure they are handled correctly.
 
         // Mock CSV Writer.
